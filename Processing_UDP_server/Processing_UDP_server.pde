@@ -17,10 +17,11 @@ void setup() {
   // solve error libgles2-mesa
   // failed to open swrast
   // EGLGLXDrawableFactory
-  size(900, 200, P2D);
+  size(512, 100, P2D);
   plasmaSetup();
   dotsInit();
   udpInit();
+  musicInit();
   
 }
 
@@ -60,6 +61,10 @@ void draw() {
     
     case 7:
     // selected color
+    break;
+    
+    case 8:
+    musicDraw();
     break;
     
   }
